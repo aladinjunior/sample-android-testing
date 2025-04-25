@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!--App Theme-->
+    <color name="surface_container">#F8EBE7</color>
 </resources>

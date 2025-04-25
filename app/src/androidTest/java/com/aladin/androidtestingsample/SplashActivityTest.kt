@@ -5,12 +5,13 @@ import com.aladin.androidtestingsample.scope.createScope
 import com.aladin.androidtestingsample.scopes.MainActivityActScope
 import com.aladin.androidtestingsample.scopes.MainActivityArrangeScope
 import com.aladin.androidtestingsample.scopes.MainActivityAssertScope
+import com.aladin.androidtestingsample.splash.presentation.SplashActivity
 import org.junit.Rule
 import org.junit.Test
 
-class MainActivityTest {
+class SplashActivityTest {
     @get: Rule
-    val activityRule = ActivityScenarioRule(MainActivity::class.java)
+    val activityRule = ActivityScenarioRule(SplashActivity::class.java)
 
     private val testScope = createScope<MainActivityArrangeScope, MainActivityActScope, MainActivityAssertScope>()
 
