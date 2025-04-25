@@ -1,0 +1,3 @@
+package com.aladin.androidtestingsample.contract
+
+interface AssertScope
