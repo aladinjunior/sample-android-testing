@@ -12,5 +12,34 @@
         android:id="@+id/app_top_bar"
         layout="@layout/sociable_top_bar_layout" />
 
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:paddingVertical="@dimen/spacing_xsmall"
+        android:id="@+id/toggle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface_container"
+        android:gravity="center"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/friends_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/component_height_sbig"
+            android:text="@string/friends"
+            android:textColor="@color/on_secondary"
+            app:icon="@drawable/ic_check_round" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/groups_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/component_height_sbig"
+            android:text="@string/groups"
+            android:textColor="@color/on_secondary"
+            app:icon="@drawable/ic_check_round" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
 
 </LinearLayout>
