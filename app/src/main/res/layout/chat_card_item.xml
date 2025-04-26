@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner_rounded_mask"
+    android:backgroundTint="@color/surface_container">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/contact_profile_image"
+        android:layout_width="@dimen/component_medium_size"
+        android:layout_height="@dimen/component_medium_size"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_sbig"
+        android:background="@color/material_dynamic_primary10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImageStyle" />
+
+    <TextView
+        android:id="@+id/contact_name_text"
+        style="@style/FontTextTitleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xsmall"
+        android:layout_marginTop="@dimen/spacing_xsmedium"
+        android:text="@string/app_name"
+        app:layout_constraintStart_toEndOf="@id/contact_profile_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contact_message_text"
+        style="@style/FontTextBodyLarge"
+        android:maxWidth="@dimen/component_width_extra_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_xsmedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:maxLines="3"
+        android:text="@string/app_name"
+        app:layout_constraintTop_toBottomOf="@id/contact_name_text"
+        app:layout_constraintStart_toStartOf="@id/contact_name_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

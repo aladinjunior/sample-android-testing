@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--Circle Image Mask-->
     <style name="CircleImageStyle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+
+    <style name="AppFontBase">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <!--Title Large Font-->
+    <style name="FontTextTitleLarge" parent="AppFontBase">
+        <item name="android:textSize">@dimen/font_title_large</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+    <!--Body Large Font-->
+    <style name="FontTextBodyLarge" parent="AppFontBase">
+        <item name="android:textSize">@dimen/font_body_large</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+
+
 </resources>

@@ -3,16 +3,26 @@
     <!--Components size-->
     <dimen name="actionbar_size">80dp</dimen>
     <dimen name="component_width_big">120dp</dimen>
+    <dimen name="component_width_extra_big">230dp</dimen>
     <dimen name="component_height_medium">40dp</dimen>
     <dimen name="component_height_sbig">54dp</dimen>
-
-
+    <dimen name="component_height_small">24dp</dimen>
+    <dimen name="component_width_small">24dp</dimen>
     <dimen name="component_small_size">30dp</dimen>
+    <dimen name="component_medium_size">40dp</dimen>
 
     <!--Spacing-->
     <dimen name="spacing_xsmall">9dp</dimen>
     <dimen name="spacing_small">12dp</dimen>
+    <dimen name="spacing_xsmedium">16dp</dimen>
     <dimen name="spacing_medium">20dp</dimen>
     <dimen name="spacing_smedium">24dp</dimen>
     <dimen name="spacing_sbig">32dp</dimen>
+
+    <!--Radius-->
+    <dimen name="corner_radius_medium">16dp</dimen>
+
+    <!--Font-->
+    <dimen name="font_title_large">22sp</dimen>
+    <dimen name="font_body_large">16sp</dimen>
 </resources>
