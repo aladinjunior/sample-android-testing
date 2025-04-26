@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -13,6 +13,7 @@
         layout="@layout/sociable_top_bar_layout" />
 
     <com.google.android.material.button.MaterialButtonToggleGroup
+        app:layout_constraintTop_toBottomOf="@id/app_top_bar"
         android:paddingVertical="@dimen/spacing_xsmall"
         android:id="@+id/toggle_button"
         android:layout_width="match_parent"
@@ -42,4 +43,18 @@
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
 
-</LinearLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        android:id="@+id/add_a_friend_extended_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/spacing_smedium"
+        android:layout_marginBottom="@dimen/spacing_sbig"
+        android:text="@string/add_a_friend_label"
+        app:icon="@drawable/ic_user_add"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
