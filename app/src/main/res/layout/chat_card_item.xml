@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/corner_rounded_mask"
     android:backgroundTint="@color/surface_container">
 
@@ -36,16 +37,47 @@
     <TextView
         android:id="@+id/contact_message_text"
         style="@style/FontTextBodyLarge"
-        android:maxWidth="@dimen/component_width_extra_big"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_small"
         android:layout_marginBottom="@dimen/spacing_xsmedium"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:maxLines="3"
+        android:maxWidth="@dimen/component_width_extra_big"
+        android:maxLines="2"
         android:text="@string/app_name"
-        app:layout_constraintTop_toBottomOf="@id/contact_name_text"
-        app:layout_constraintStart_toStartOf="@id/contact_name_text" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/contact_name_text"
+        app:layout_constraintTop_toBottomOf="@id/contact_name_text" />
 
+    <LinearLayout
+        android:id="@+id/card_notification_container"
+        android:background="@drawable/circle_colored_mask"
+        android:layout_width="@dimen/component_very_small_size"
+        android:layout_height="@dimen/component_very_small_size"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="@dimen/spacing_small" >
+
+        <TextView
+            style="@style/FontTextLabelSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:maxLines="2"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/FontTextLabelMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just Now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/card_notification_container"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="@dimen/spacing_small"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:maxLines="2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

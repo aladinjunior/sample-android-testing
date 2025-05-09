@@ -23,5 +23,16 @@
         <item name="android:textColor">@color/on_surface</item>
     </style>
 
+    <!--Label Small Font-->
+    <style name="FontTextLabelSmall" parent="AppFontBase">
+        <item name="android:textSize">@dimen/font_label_small</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--Label Medium Font-->
+    <style name="FontTextLabelMedium" parent="AppFontBase">
+        <item name="android:textSize">@dimen/font_label_medium</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
 
 </resources>
