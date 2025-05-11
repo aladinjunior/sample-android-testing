@@ -6,7 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.aladin.androidtestingsample.R
+import com.aladin.androidtestingsample.chats.presentation.adapter.ChatsAdapter
+import com.aladin.androidtestingsample.chats.presentation.viewmodel.ChatsViewModel
 import com.aladin.androidtestingsample.databinding.ActivityChatsBinding
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.button.MaterialButtonToggleGroup
@@ -15,14 +18,25 @@ class ChatsActivity : AppCompatActivity() {
     private val binding by lazy {
         ActivityChatsBinding.inflate(layoutInflater)
     }
+    private val viewModel = ChatsViewModel()
+
+    private lateinit var adapter: ChatsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
+        setupAdapter()
         setupTopAppBar()
         setupListeners()
         initMaterialButtonToggle()
+    }
+
+    private fun setupAdapter() = with(binding) {
+        val chatsData = viewModel.getChatsData()
+        adapter = ChatsAdapter(chatsData)
+        chatCardsRecyclerView.layoutManager = LinearLayoutManager(this@ChatsActivity)
+        chatCardsRecyclerView.adapter = adapter
     }
 
     private fun setupTopAppBar() = with(binding) {
