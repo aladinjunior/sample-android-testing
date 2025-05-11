@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/spacing_xsmall"
     android:background="@drawable/corner_rounded_mask"
     android:backgroundTint="@color/surface_container">
 
@@ -24,6 +25,7 @@
         app:shapeAppearanceOverlay="@style/CircleImageStyle" />
 
     <TextView
+        app:layout_constraintBottom_toTopOf="@id/contact_message_text"
         android:id="@+id/contact_name_text"
         style="@style/FontTextTitleLarge"
         android:layout_width="wrap_content"
@@ -39,7 +41,6 @@
         style="@style/FontTextBodyLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/spacing_small"
         android:layout_marginBottom="@dimen/spacing_xsmedium"
         android:maxWidth="@dimen/component_width_extra_big"
         android:maxLines="2"
@@ -60,6 +61,7 @@
         android:layout_marginEnd="@dimen/spacing_small" >
 
         <TextView
+            android:id="@+id/contact_messages_sent_text"
             style="@style/FontTextLabelSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,6 +70,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/contact_last_message_sent_time"
         style="@style/FontTextLabelMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

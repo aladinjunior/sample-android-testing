@@ -10,6 +10,9 @@
     <dimen name="component_width_small">24dp</dimen>
     <dimen name="component_small_size">30dp</dimen>
     <dimen name="component_medium_size">40dp</dimen>
+    <dimen name="component_big_size">56dp</dimen>
+    <dimen name="component_sbig_size">50dp</dimen>
+    <dimen name="component_very_small_size">16dp</dimen>
 
     <!--Spacing-->
     <dimen name="spacing_xsmall">9dp</dimen>
@@ -25,4 +28,6 @@
     <!--Font-->
     <dimen name="font_title_large">22sp</dimen>
     <dimen name="font_body_large">16sp</dimen>
+    <dimen name="font_label_small">11sp</dimen>
+    <dimen name="font_label_medium">12sp</dimen>
 </resources>
